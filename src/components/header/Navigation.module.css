@@ -1,0 +1,13 @@
+.nav {
+  list-style-type: none;
+  color: #fff;
+}
+
+.nav li {
+  display: inline;
+  font-size: 1.6rem;
+}
+
+.nav li:not(:first-child) {
+  padding-left: 3.5rem;
+}

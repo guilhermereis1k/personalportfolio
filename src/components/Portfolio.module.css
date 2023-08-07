@@ -1,0 +1,26 @@
+.portfolio {
+  display: flex;
+  padding: 9rem 0;
+}
+
+.portfolio h2 {
+  font-size: 3.2rem;
+  margin-bottom: 3rem;
+}
+
+.portfolio__projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  grid-gap: 2em;
+}
+
+.portfolio__item {
+  width: 33rem;
+  height: 33rem;
+  background: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+}

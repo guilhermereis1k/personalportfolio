@@ -1,0 +1,47 @@
+.skills {
+  background: #000;
+  color: #fff;
+  padding: 10rem;
+}
+
+.skills h2 {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.skills svg {
+  width: 7rem;
+  height: auto;
+  filter: brightness(0) invert(1);
+  transition: all 0.3s;
+}
+
+.skills svg:hover {
+  filter: none;
+}
+
+.skills__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skills__icons {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+}
+
+.skills__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skills__icon-box figcaption {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}

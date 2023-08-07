@@ -1,0 +1,17 @@
+.header {
+  background: #000;
+  padding: 3.5rem 0;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  width: 5rem;
+  height: auto;
+  fill: #fff;
+}
