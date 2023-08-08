@@ -1,7 +1,11 @@
+.bg {
+  background: var(--topography-bg);
+  background-color: #000;
+}
+
 .intro {
-  background: #000;
   color: #fff;
-  height: calc(100vh - 10rem);
+  height: calc(100vh - 8.5rem);
   margin: auto 0;
   display: flex;
   align-items: center;

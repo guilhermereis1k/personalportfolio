@@ -1,5 +1,9 @@
-.contact {
+.bg {
+  background: var(--topography-bg);
   background-color: #000;
+}
+
+.contact {
   color: #fff;
   padding: 9rem 0;
 }

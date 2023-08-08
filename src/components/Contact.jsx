@@ -1,10 +1,15 @@
 import classes from "./Contact.module.css";
 import Container from "./UI/Container";
+import Footer from "./footer/Footer";
+
+const contactClasses = classes["contact__content"] + classes.contact;
 
 const Contact = () => {
   return (
-    <main className={classes.contact}>
-      <Container className={classes["contact__content"]}>
+    <div className={classes.bg}>
+      <Container
+        className={`${classes["contact__content"]} ${classes.contact}`}
+      >
         <h2>Contato</h2>
         <div className={classes["contact__form"]}>
           <form action="">
@@ -15,7 +20,8 @@ const Contact = () => {
           </form>
         </div>
       </Container>
-    </main>
+      <Footer />
+    </div>
   );
 };
 

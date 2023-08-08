@@ -19,6 +19,12 @@ const About = () => {
             phasellus interdum. Amet nec nec pulvinar pellentesque ultrices
             tortor ac.
           </p>
+          <ul>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+          </ul>
         </div>
       </Container>
     </main>

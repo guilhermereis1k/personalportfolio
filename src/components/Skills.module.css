@@ -1,5 +1,6 @@
 .skills {
-  background: #000;
+  background: var(--topography-bg);
+  background-color: #000;
   color: #fff;
   padding: 10rem;
 }

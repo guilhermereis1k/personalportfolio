@@ -3,7 +3,7 @@ import Container from "./UI/Container";
 
 const Portfolio = () => {
   return (
-    <main className={classes.portfolio}>
+    <div className={classes.portfolio}>
       <Container className={classes["portfolio__content"]}>
         <h2>Portfólio</h2>
         <div className={classes["portfolio__projects"]}>
@@ -24,7 +24,7 @@ const Portfolio = () => {
           </div>
         </div>
       </Container>
-    </main>
+    </div>
   );
 };
 

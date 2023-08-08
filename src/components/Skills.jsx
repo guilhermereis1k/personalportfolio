@@ -10,7 +10,7 @@ import BootstrapSVG from "../assets/svg/bootstrapSVG";
 
 const Skills = () => {
   return (
-    <main className={classes.skills}>
+    <div className={classes.skills}>
       <Container className={classes["skills__content"]}>
         <h2>Habilidades</h2>
         <div className={classes["skills__icons"]}>
@@ -44,7 +44,7 @@ const Skills = () => {
           </div>
         </div>
       </Container>
-    </main>
+    </div>
   );
 };
 
