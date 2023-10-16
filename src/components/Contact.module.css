@@ -19,10 +19,6 @@
   align-items: center;
 }
 
-.contact__form {
-  width: 30%;
-}
-
 .contact__form form {
   margin-top: 3rem;
   display: flex;

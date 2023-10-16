@@ -1,6 +1,6 @@
 .about {
   height: auto;
-  padding: 7rem 0;
+  margin: 7rem 0;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,20 +9,36 @@
 
 .about h2 {
   font-size: 3.2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.8rem;
   font-weight: 500;
+}
+
+.about h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .about p {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: normal;
+  margin-bottom: 2rem;
 }
 
 .about img {
-  width: 30rem;
+  width: 40rem;
   height: auto;
   border-radius: 266px;
+}
+
+.about__list {
+  list-style-position: inside;
+  list-style-type: circle;
+}
+
+.about__list li {
+  font-size: 1.4rem;
 }
 
 .about__content {
@@ -31,4 +47,17 @@
   align-items: center;
   justify-content: space-between;
   gap: 9rem;
+}
+
+@media only screen and (max-width: 1150px) {
+  .about img {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about__content {
+    flex-direction: column;
+    gap: 3rem;
+  }
 }

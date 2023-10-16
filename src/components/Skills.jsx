@@ -7,13 +7,37 @@ import TypescriptSVG from "../assets/svg/typescriptSVG";
 import ReactSVG from "../assets/svg/reactSVG";
 import SassSVG from "../assets/svg/sassSVG";
 import BootstrapSVG from "../assets/svg/bootstrapSVG";
+import JavaSVG from "../assets/svg/javaSVG";
+import SpringSVG from "../assets/svg/springSVG";
+import PostgreSQL from "../assets/svg/postgreSVG";
+import MysqlSVG from "../assets/svg/mysqlSVG";
 
 const Skills = () => {
   return (
-    <div className={classes.skills}>
+    <div id="skills" className={classes.skills}>
       <Container className={classes["skills__content"]}>
         <h2>Habilidades</h2>
         <div className={classes["skills__icons"]}>
+          <div className={classes["skills__icon-box"]}>
+            <JavaSVG />
+            <figcaption>Java</figcaption>
+          </div>
+          <div className={classes["skills__icon-box"]}>
+            <SpringSVG />
+            <figcaption>Spring</figcaption>
+          </div>
+          <div className={classes["skills__icon-box"]}>
+            <PostgreSQL />
+            <figcaption>PostgreSQL</figcaption>
+          </div>
+          <div className={classes["skills__icon-box"]}>
+            <MysqlSVG />
+            <figcaption>MySQL</figcaption>
+          </div>
+          <div className={classes["skills__icon-box"]}>
+            <ReactSVG />
+            <figcaption>ReactJS</figcaption>
+          </div>
           <div className={classes["skills__icon-box"]}>
             <HtmlSVG />
             <figcaption>HTML5</figcaption>
@@ -25,14 +49,6 @@ const Skills = () => {
           <div className={classes["skills__icon-box"]}>
             <JavascriptSVG />
             <figcaption>Javascript</figcaption>
-          </div>
-          <div className={classes["skills__icon-box"]}>
-            <TypescriptSVG />
-            <figcaption>Typescript</figcaption>
-          </div>
-          <div className={classes["skills__icon-box"]}>
-            <ReactSVG />
-            <figcaption>ReactJS</figcaption>
           </div>
           <div className={classes["skills__icon-box"]}>
             <SassSVG />
