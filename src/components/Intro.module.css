@@ -50,3 +50,11 @@
     transform: translateY(-0.5rem);
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .intro__button,
+  .intro__button:visited,
+  .intro__button:link {
+    width: 35%;
+  }
+}
