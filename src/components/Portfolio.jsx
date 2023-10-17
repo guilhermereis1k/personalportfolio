@@ -17,7 +17,10 @@ const Portfolio = () => {
       <Container className={classes["portfolio__content"]}>
         <h2>Portfólio</h2>
         <div className={classes["portfolio__projects"]}>
-          <Link style={{ textDecoration: "none" }} to="#">
+          <Link
+            style={{ textDecoration: "none" }}
+            to="https://github.com/guilhermereis1k/MeetTheRich-spring-react"
+          >
             <div className={classes["portfolio__item"]}>
               <img src={`${MeetTheRichImg}`} alt="" />
               <h1 className={classes["portfolio__item--title"]}>
