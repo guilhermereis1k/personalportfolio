@@ -5,9 +5,16 @@
   padding: 10rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .skills {
+    padding-bottom: 5rem;
+  }
+}
+
 .skills h2 {
   font-size: 3.2rem;
   text-align: center;
+  align-self: center;
 }
 
 .skills svg {
@@ -45,7 +52,6 @@
 @media only screen and (max-width: 900px) {
   .skills__icons {
     flex-direction: column;
-    margin-bottom: 2rem;
   }
 }
 
@@ -54,6 +60,12 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 900px) {
+  .skills__icon-box {
+    margin-bottom: 3rem;
+  }
 }
 
 .skills__icon-box figcaption {

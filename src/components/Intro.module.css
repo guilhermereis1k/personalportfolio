@@ -51,10 +51,18 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .intro__button,
   .intro__button:visited,
   .intro__button:link {
     width: 35%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .intro__button,
+  .intro__button:visited,
+  .intro__button:link {
+    margin-bottom: 3rem;
   }
 }

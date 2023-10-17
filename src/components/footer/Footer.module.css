@@ -3,6 +3,12 @@
   color: #fff;
 }
 
+@media only screen and (max-width: 500px) {
+  .footer {
+    padding-top: 5rem;
+  }
+}
+
 .footer__content {
   text-align: center;
   padding: 1.4rem 0;
