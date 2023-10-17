@@ -13,7 +13,7 @@ const Contact = () => {
         <h2>Contato</h2>
         <div className={classes["contact__form"]}>
           <form
-            action="https://formsubmit.co/a75f873cebe771741e8aad551bc28677 "
+            action="https://formsubmit.co/guilhermereisdl@gmail.com"
             method="POST"
           >
             <input
