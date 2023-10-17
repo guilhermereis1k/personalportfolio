@@ -49,5 +49,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-        "predeploy": "npm run build",
-"deploy": "gh-pages -d build",
