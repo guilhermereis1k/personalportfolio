@@ -1,5 +1,6 @@
 .bg {
   background: var(--topography-bg);
+  object-fit: cover;
   background-color: #000;
 }
 
