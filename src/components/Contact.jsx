@@ -1,6 +1,6 @@
 import classes from "./Contact.module.css";
 import Container from "./UI/Container";
-import Footer from "./Footer/Footer";
+import Footer from "./footer/Footer";
 import { useContext } from "react";
 import { LanguageContext } from "../routes/App";
 
