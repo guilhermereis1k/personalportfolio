@@ -5,26 +5,21 @@
   padding: 10rem;
 }
 
-@media only screen and (max-width: 500px) {
-  .skills {
-    padding-bottom: 5rem;
-  }
-}
-
 .skills h2 {
   font-size: 3.2rem;
   text-align: center;
-  align-self: center;
 }
 
 .skills svg {
   width: 7rem;
   height: auto;
   transition: all 0.1s;
+  opacity: 0.8;
 }
 
 .skills svg:hover {
   transform: scale(1.2);
+  opacity: 1;
 }
 
 .skills figcaption {
@@ -60,12 +55,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-@media only screen and (max-width: 900px) {
-  .skills__icon-box {
-    margin-bottom: 3rem;
-  }
 }
 
 .skills__icon-box figcaption {

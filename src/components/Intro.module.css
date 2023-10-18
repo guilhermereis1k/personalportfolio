@@ -1,6 +1,5 @@
 .bg {
   background: var(--topography-bg);
-  object-fit: cover;
   background-color: #000;
 }
 
@@ -11,6 +10,19 @@
   display: flex;
   align-items: center;
   text-align: center;
+  animation: fadeInAnimation ease 1.5s;
+  padding-bottom: 2rem;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -35,14 +47,13 @@
 .intro__button:visited,
 .intro__button:link {
   height: 4rem;
-  width: 20%;
   font-size: 1.8rem;
   cursor: pointer;
   font-family: "Poppins";
   font-weight: 700;
   border: 2px solid transparent;
   transition: all 0.2s;
-  margin: 0 2rem;
+  padding: 0 6rem;
 
   &:hover {
     border: 2px solid #fff;
@@ -52,18 +63,9 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .intro__button,
-  .intro__button:visited,
-  .intro__button:link {
-    width: 35%;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  .intro__button,
-  .intro__button:visited,
-  .intro__button:link {
-    margin-bottom: 3rem;
-  }
+.intro__button-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
+  justify-content: center;
 }

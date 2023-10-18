@@ -6,28 +6,29 @@ import MeetTheRichImg from "../assets/mtr.png";
 import RevistaSeareiroAssinaturaImg from "../assets/rs.png";
 import SagradoBetelImg from "../assets/sbem.png";
 import PortfolioImg from "../assets/portfolio.png";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import { LanguageContext } from "../routes/App";
 
 const Portfolio = () => {
   const [hovering, setHovering] = useState(false);
+  const { language, setLanguage } = useContext(LanguageContext);
 
   return (
     <div id="portfolio" className={classes.portfolio}>
       <Container className={classes["portfolio__content"]}>
-        <h2>Portfólio</h2>
+        <h2>{language == "ptBR" ? `Portfólio` : `Portfolio`}</h2>
         <div className={classes["portfolio__projects"]}>
-          <Link
-            style={{ textDecoration: "none" }}
-            to="https://github.com/guilhermereis1k/MeetTheRich-spring-react"
-          >
+          <Link style={{ textDecoration: "none" }} to="#">
             <div className={classes["portfolio__item"]}>
               <img src={`${MeetTheRichImg}`} alt="" />
               <h1 className={classes["portfolio__item--title"]}>
                 Meet The Rich
               </h1>
               <div className={classes["portfolio__item--link"]}>
-                <h1>ACESSAR PROJETO</h1>
+                <h1>
+                  {language == "ptBR" ? `ACESSAR PROJETO` : `ACCESS PROJECT`}
+                </h1>
               </div>
 
               <div className={classes["portfolio__item--desc"]}>
@@ -46,7 +47,9 @@ const Portfolio = () => {
                 Spring WebService
               </h1>
               <div className={classes["portfolio__item--link"]}>
-                <h1>ACESSAR PROJETO</h1>
+                <h1>
+                  {language == "ptBR" ? `ACESSAR PROJETO` : `ACCESS PROJECT`}
+                </h1>
               </div>
               <div className={classes["portfolio__item--desc"]}>
                 <p>Spring (Java) & MySQL</p>
@@ -64,7 +67,9 @@ const Portfolio = () => {
                 Paper Rock Scissors Game
               </h1>
               <div className={classes["portfolio__item--link"]}>
-                <h1>ACESSAR PROJETO</h1>
+                <h1>
+                  {language == "ptBR" ? `ACESSAR PROJETO` : `ACCESS PROJECT`}
+                </h1>
               </div>
               <div className={classes["portfolio__item--desc"]}>
                 <p>React</p>
@@ -79,10 +84,14 @@ const Portfolio = () => {
             <div className={classes["portfolio__item"]}>
               <img src={`${RevistaSeareiroAssinaturaImg}`} alt="" />
               <h1 className={classes["portfolio__item--title"]}>
-                Assinatura Revista Seareiro
+                {language == "ptBR"
+                  ? `Assinatura Revista Seareiro`
+                  : `Seareiro Magazine Signature`}
               </h1>
               <div className={classes["portfolio__item--link"]}>
-                <h1>ACESSAR SITE</h1>
+                <h1>
+                  {language == "ptBR" ? `ACESSAR PROJETO` : `ACCESS PROJECT`}
+                </h1>
               </div>
               <div className={classes["portfolio__item--desc"]}>
                 <p>HTML/CSS/JS & Figma</p>
@@ -97,10 +106,14 @@ const Portfolio = () => {
             <div className={classes["portfolio__item"]}>
               <img src={`${SagradoBetelImg}`} alt="" />
               <h1 className={classes["portfolio__item--title"]}>
-                Sagrado Betel Emergência Médicas
+                {language == "ptBR"
+                  ? `Sagrado Betel Emergência Médicas`
+                  : `Sagrado Betel Medical Emergency`}
               </h1>
               <div className={classes["portfolio__item--link"]}>
-                <h1>ACESSAR SITE</h1>
+                <h1>
+                  {language == "ptBR" ? `ACESSAR PROJETO` : `ACCESS PROJECT`}
+                </h1>
               </div>
               <div className={classes["portfolio__item--desc"]}>
                 <p>HTML/CSS/JS & Figma</p>
@@ -111,9 +124,13 @@ const Portfolio = () => {
           <Link style={{ textDecoration: "none" }} to="#">
             <div className={classes["portfolio__item"]}>
               <img src={`${PortfolioImg}`} alt="" />
-              <h1 className={classes["portfolio__item--title"]}>Portfólio</h1>
+              <h1 className={classes["portfolio__item--title"]}>
+                {language == "ptBR" ? `Portfólio` : `Portfolio`}
+              </h1>
               <div className={classes["portfolio__item--link"]}>
-                <h1>ACESSAR PROJETO</h1>
+                <h1>
+                  {language == "ptBR" ? `ACESSAR PROJETO` : `ACCESS PROJECT`}
+                </h1>
               </div>
               <div className={classes["portfolio__item--desc"]}>
                 <p>React</p>

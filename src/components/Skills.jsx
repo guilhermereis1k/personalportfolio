@@ -11,12 +11,16 @@ import JavaSVG from "../assets/svg/javaSVG";
 import SpringSVG from "../assets/svg/springSVG";
 import PostgreSQL from "../assets/svg/postgreSVG";
 import MysqlSVG from "../assets/svg/mysqlSVG";
+import { useContext } from "react";
+import { LanguageContext } from "../routes/App";
 
 const Skills = () => {
+  const { language, setLanguage } = useContext(LanguageContext);
+
   return (
     <div id="skills" className={classes.skills}>
       <Container className={classes["skills__content"]}>
-        <h2>Habilidades</h2>
+        <h2>{language == "ptBR" ? `Habilidade` : `Skills`}</h2>
         <div className={classes["skills__icons"]}>
           <div className={classes["skills__icon-box"]}>
             <JavaSVG />
