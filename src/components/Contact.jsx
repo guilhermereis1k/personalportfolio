@@ -1,15 +1,25 @@
 import classes from "./Contact.module.css";
 import Container from "./UI/Container";
-import Footer from "./footer/Footer";
+import Footer from "./Footer/Footer";
 import { useContext } from "react";
 import { LanguageContext } from "../routes/App";
+import { useState } from "react";
 
 const contactClasses = classes["contact__content"] + classes.contact;
 
 const Contact = () => {
   const { language, setLanguage } = useContext(LanguageContext);
+  const [sent, setSent] = useState(false);
 
   const CompleteName = language == "ptBR" ? `Nome completo` : `Full name`;
+
+  const messageSuccess =
+    language == "ptBR" ? `Mensagem enviada!` : `Message sent!`;
+
+  const submitContactHandler = (e) => {
+    e.preventDefault();
+    setSent(true);
+  };
 
   return (
     <div id="contact" className={classes.bg}>
@@ -19,9 +29,11 @@ const Contact = () => {
         <h2>{language == "ptBR" ? `Contato` : `Contact`}</h2>
         <div className={classes["contact__form"]}>
           <form
-            action="https://formsubmit.co/a75f873cebe771741e8aad551bc28677 "
+            action="https://formsubmit.co/a75f873cebe771741e8aad551bc28677"
             method="POST"
+            onSubmit={submitContactHandler}
           >
+            {sent && <h3 style={{ textAlign: "center" }}>{messageSuccess}</h3>}
             <input
               type="text"
               placeholder={language == "ptBR" ? `Nome completo` : `Full name`}
@@ -38,6 +50,7 @@ const Contact = () => {
               cols="30"
               rows="10"
             ></textarea>
+
             <button type="submit">
               {language == "ptBR" ? `ENVIAR` : `SEND`}
             </button>
