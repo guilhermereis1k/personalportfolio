@@ -13,14 +13,6 @@ const Contact = () => {
 
   const CompleteName = language == "ptBR" ? `Nome completo` : `Full name`;
 
-  const messageSuccess =
-    language == "ptBR" ? `Mensagem enviada!` : `Message sent!`;
-
-  const submitContactHandler = (e) => {
-    e.preventDefault();
-    setSent(true);
-  };
-
   return (
     <div id="contact" className={classes.bg}>
       <Container
@@ -31,7 +23,6 @@ const Contact = () => {
           <form
             action="https://formsubmit.co/a75f873cebe771741e8aad551bc28677"
             method="POST"
-            onSubmit={submitContactHandler}
           >
             {sent && <h3 style={{ textAlign: "center" }}>{messageSuccess}</h3>}
             <input
