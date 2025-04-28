@@ -3,7 +3,6 @@ import Container from "./UI/Container.jsx";
 import HtmlSVG from "../assets/svg/htmlSvg";
 import CssSVG from "../assets/svg/cssSVG";
 import JavascriptSVG from "../assets/svg/javascriptSVG";
-import TypescriptSVG from "../assets/svg/typescriptSVG";
 import ReactSVG from "../assets/svg/reactSVG";
 import SassSVG from "../assets/svg/sassSVG";
 import BootstrapSVG from "../assets/svg/bootstrapSVG";

@@ -6,6 +6,7 @@ import MeetTheRichImg from "../assets/mtr.png";
 import RevistaSeareiroAssinaturaImg from "../assets/rs.png";
 import SagradoBetelImg from "../assets/sbem.png";
 import PortfolioImg from "../assets/portfolio.png";
+import OscarCinemaPhoto from "../assets/oscarcinemaphoto.webp";
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { LanguageContext } from "../routes/App";
@@ -37,6 +38,21 @@ const Portfolio = () => {
               </div>
             </div>
           </Link>
+          <div className={classes["portfolio__item"]}>
+              <img src={`${OscarCinemaPhoto}`} alt="" />
+              <h1 className={classes["portfolio__item--title"]}>
+                {language == "ptBR" ? `Oscar Cinema` : `Oscar Cinema`}
+              </h1>
+              <div className={classes["portfolio__item--link"]}>
+                <h1>
+                  {language == "ptBR" ? `EM PROGRESSO` : `IN PROGRESS`}
+                </h1>
+              </div>
+              <div className={classes["portfolio__item--desc"]}>
+                <p>Spring, React & PostgreSQL</p>
+                <h3>Fullstack</h3>
+              </div>
+            </div>
           <Link
             style={{ textDecoration: "none" }}
             to="https://github.com/guilhermereis1k/webservice-jpa-spring"

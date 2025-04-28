@@ -15,8 +15,8 @@ const Intro = () => {
         <Container className={classes["intro__content"]}>
           <h1>
             {language == "ptBR"
-              ? `Designer e desenvolvedor apaixonado por tornar ideias reais.`
-              : `Designer and developer passionate about making ideas real.`}
+              ? `Um desenvolvedor apaixonado por tornar ideias reais.`
+              : `A developer passionate about making ideas real.`}
           </h1>
           <div className={classes["intro__button-flex"]}>
             <Link
