@@ -1,6 +1,6 @@
 import classes from "./Intro.module.css";
-import Container from "./UI/Container";
-import Header from "./header/Header";
+import Container from "./UI/Container.jsx";
+import Header from "./header/Header.jsx";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { LanguageContext } from "../routes/App";

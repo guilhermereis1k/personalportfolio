@@ -1,5 +1,5 @@
 import classes from "./Skills.module.css";
-import Container from "./UI/Container";
+import Container from "./UI/Container.jsx";
 import HtmlSVG from "../assets/svg/htmlSvg";
 import CssSVG from "../assets/svg/cssSVG";
 import JavascriptSVG from "../assets/svg/javascriptSVG";

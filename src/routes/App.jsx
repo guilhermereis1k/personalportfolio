@@ -1,9 +1,9 @@
 import "./App.css";
-import Intro from "../components/Intro";
-import About from "../components/About";
-import Skills from "../components/Skills";
-import Portfolio from "../components/Portfolio";
-import Contact from "../components/Contact";
+import Intro from "../components/Intro.jsx";
+import About from "../components/About.jsx";
+import Skills from "../components/Skills.jsx";
+import Portfolio from "../components/Portfolio.jsx";
+import Contact from "../components/Contact.jsx";
 import { useState, createContext } from "react";
 
 export const LanguageContext = createContext();

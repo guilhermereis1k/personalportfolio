@@ -1,5 +1,5 @@
 import classes from "./About.module.css";
-import Container from "./UI/Container";
+import Container from "./UI/Container.jsx";
 import ProfileImg from "../assets/profile-pic.jpg";
 import { LanguageContext } from "../routes/App";
 import { useContext } from "react";

@@ -1,5 +1,5 @@
 import classes from "./Portfolio.module.css";
-import Container from "./UI/Container";
+import Container from "./UI/Container.jsx";
 import WebServiceImg from "../assets/ws.png";
 import PaperRockScissorsImg from "../assets/pprs.png";
 import MeetTheRichImg from "../assets/mtr.png";
