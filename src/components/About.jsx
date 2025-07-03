@@ -15,8 +15,8 @@ const About = () => {
           <h2>{language == "ptBR" ? `Sobre mim` : `About me`}</h2>
           <p>
             {language == "ptBR"
-              ? ` Tenho contato com a programação desde 2015 quando fiz um curso técnico, desde esse tempo já me formei e trabalhei como designer, sempre programando em algum nível. Em 2021, comecei a estudar desenvolvimento ativamente, no momento estou cursando Análise e Desenvolvimento de Sistemas na Fatec Zona Sul. Atualmente, mexo principalmente com Java, Spring, SQL, Postgres e já tive contato e experiências com HTML, CSS, Javascript e ReactJS.`
-              : `I started my journey in the development field in 2015, right when I entered high school. I chose to pursue a technical course focused on web development, which lasted until 2017. From that point on, I made the decision to pursue a career in graphic design and worked in that field for over a year. Recently, I shifted my focus and am now fully committed to development, with an emphasis on the back-end. Since last year, I have been dedicated to improving my skills, and I am currently seeking opportunities to work and progress in this area.`}
+              ? `Tenho contato com programação desde 2015, quando fiz um curso técnico. Desde então, me formei e atuei como designer, sempre mantendo a programação presente. Em 2021, retomei os estudos de forma ativa e atualmente curso Análise e Desenvolvimento de Sistemas na Fatec Zona Sul. Trabalho com projetos em .NET Core, Spring, MySQL e Postgres, e tenho experiências profissionais com HTML, CSS, JavaScript e React.`
+              : `I’ve been involved with programming since 2015, when I took a technical course. Since then, I’ve graduated and worked as a designer, always programming at some level. In 2021, I resumed studying development actively, and I’m currently pursuing a degree in Systems Analysis and Development at Fatec Zona Sul. Currently, I work on projects using .NET Core, Spring, MySQL, and Postgres, and I also have professional experience with HTML, CSS, JavaScript, and React.`}
           </p>
           <h3>Soft skills</h3>
           <ul className={classes["about__list"]}>
